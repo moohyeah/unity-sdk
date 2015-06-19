@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D646EA79-E834-5570-D462-6BA1003A8E0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>4.5.2f1</UnityVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\plugins\Qiniu\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\plugins\Qiniu\Auth\PutAuthClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Auth\QiniuAuthClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Auth\digest\Mac.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Conf\Config.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\Exif.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ExifRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\FileOpClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ImageInfo.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ImageInfoRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ImageMogrify.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ImageView.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\ImageWaterMarker.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\TextWaterMarker.cs" />
+    <Compile Include="Assets\plugins\Qiniu\FileOp\WaterMarker.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\FileParameter.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\IOClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\MultiPart.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\PutExtra.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\PutRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\Resumable\ResumablePut.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\Resumable\ResumablePutExtra.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\Resumable\ResumablePutRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\IO\Resumable\Settings.cs" />
+    <Compile Include="Assets\plugins\Qiniu\PFOP\Mkzip.cs" />
+    <Compile Include="Assets\plugins\Qiniu\PreFetch\PreFetchClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RPC\CallRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RPC\Client.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\BatchRet.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\Entry.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\GetPolicy.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\Pfop.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\PutPolicy.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\RSClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RS\RSPath.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RSF\DumpItem.cs" />
+    <Compile Include="Assets\plugins\Qiniu\RSF\RSFClient.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\Base64UrlSafe.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\CRC32.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\IO.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\QiniuJsonHelper.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\StreamEx.cs" />
+    <Compile Include="Assets\plugins\Qiniu\Util\StringEx.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>
